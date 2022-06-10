@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Теннис в Гомеле</title>
   </head>
   <body>
     <header>
-      <div id="logo">
+      <div id="logo" onclick="slowScroll('#top')">
         <span>NLebed</span>
       </div>
       <div id="about">
-        <a href="#" onclick="slowScroll('#top')">Главная</a>
         <a href="#" onclick="slowScroll('#service')">Услуги</a>
         <a href="#" onclick="slowScroll('#contacts')">Контакты</a>
         <a href="#" onclick="slowScroll('#adres')">Адрес</a>
@@ -22,20 +21,28 @@
       </div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      function slowScroll(id) {
-        $('body').animate({
-          slowTop: $(id).offset().top
-        }, 500);
-      }
+    <div id="top">
+        <h1>Теннис, как любовь, обладает способностью делать людей счастливыми</h1>
+    </div>
 
-      $(document).on("scroll", function () {
-        if($(window).scrollTop() === 0)
-          $("header").removeClass("fixed");
-        else
-          $("header").attr("class", "fixed");
-      });
-    </script>
+    <div id="service">
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
   </body>
 </html>

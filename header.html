@@ -6,7 +6,11 @@
     initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <title>Теннис в Гомеле</title>
+    <script src="https://kit.fontawesome.com/e635a4dfeb.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -15,13 +19,32 @@
       </div>
       <div id="about">
         <a href="#" onclick="slowScroll('#service')">Услуги</a>
+        <a href="#" onclick="slowScroll('#price')">Цены</a>
         <a href="#" onclick="slowScroll('#info')">Обо мне</a>
-        <a href="#" onclick="slowScroll('#adres')">Адрес</a>
         <a href="#" onclick="slowScroll('#contacts')">Контакты</a>
+        <div class="icons-up">
+          <a href="https://vk.com/lebedanastasiya" target="_blank"><i class="fa-brands fa-vk"></i></a>
+          <a href="https://www.instagram.com/nastyalebed62/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://web.telegram.org/z/#866595891" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
       </div>
     </header>
     <div id="top">
-        <h1>Теннис, как любовь, обладает способностью делать людей счастливыми</h1>
+      <section class="conteiner">
+        <div class="div_1">
+          <h1>Теннис в Гомеле</h1>
+          <h2>школа большого тенниса</h2>
+        </div>
+        <div class="div_2">
+          <h2>обучаю взрослых и детей</h2>
+          <p>+375 (29) 538-12-89</p>
+        </div>
+        <div class="div_3">
+          <h2>наш адрес</h2>
+          <p>Гомель, ул. Мазурова, 110</p>
+        </div>
+        <a href="#lesson">Записаться на пробное занятие</a>
+      </section>
     </div>
 
     <div id="service">
@@ -56,28 +79,37 @@
     </div>
 
     <section id="info">
-      <div id="aboutme">
-        <div id="text">
-          <h2>О себе:</h2>
-          <ol type="1">
-            <li>20 лет</li>
-            <li>12 лет игровой практики</li>
-            <li>Победитель и призер различных соревнований</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
+      <section class="about-me">
+        <div class="photo">
+          <img src="img/avatar.jpg" alt="" />
         </div>
-        <div id="img">
-          <span>Лебедь Анастасия Дмитриевна</span>
-          <img src="img/avatar.jpg" alt="это я">
+        <div class="information">
+
         </div>
-      </div>
+      </section>
+    </section>
+
+    <section><a name="lesson"></a>
+      <h1> Зачем теннис</h1>
     </section>
 
     <footer>
-      
+      <div class="div-left">
+
+      </div>
+      <div class="div-right">
+        <nav class="logofooter">
+          <span>NLebed</span>
+        </nav>
+          <div id="contacts">
+            <div class="icons">
+              <a href="https://vk.com/lebedanastasiya" target="_blank"><i class="fa-brands fa-vk"></i></a>
+              <a href="https://www.instagram.com/nastyalebed62/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.telegram.org/z/#866595891" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+          <nav class="rules">&copy; 2022 Все права защищены</nav>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
